@@ -10,7 +10,7 @@ let contador = 0;
 
 function tentar() {
     console.log('Tentando');
-    if(resp.value === ''){
+    if (resp.value === '') {
         span.innerText = 'Digite um valor!';
     } else {
         if (resp.value == numeroPensado) {
@@ -66,3 +66,17 @@ function tentar() {
         }
     }
 }
+
+function keyEnter(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        tentar();
+    }
+}
+
+function click(event) {
+    tentar();
+}
+
+resp.addEventListener('keypress', keyEnter);
+btnTentar.addEventListener('click', click);

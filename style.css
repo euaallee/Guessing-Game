@@ -85,3 +85,11 @@ button:hover {
     width: 20rem;
 
 }
+
+@media (max-width: 600px) {
+    .gamer {
+        transform: rotate(90deg);
+        height: 40vh;
+        width: 50rem;
+    }
+}

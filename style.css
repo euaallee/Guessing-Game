@@ -23,13 +23,14 @@ main {
 }
 
 .gamer {
-    height: 30rem;
-    width: 65rem;
+    height: 50vh;
+    width: 65vw;
+    padding: 5rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
+    justify-content: center;
     gap: 1rem;
     box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.4);
     border-radius: 4rem;
@@ -39,9 +40,11 @@ h2 {
     text-align: center;
     font-size: 4rem;
     text-shadow: 0px 5px 8px rgba(0,0,0,0.35);
+    width: 45rem;
 }
 
 span {
+    text-align: center;
     font-size: 1.5rem;
     text-shadow: 0px 5px 8px rgba(0,0,0,0.35);
 }
@@ -51,14 +54,14 @@ span {
 }
 
 .respostas {
-    padding: 3rem;
+    margin: 3rem;
     display: flex;
+    height: 5rem;
     font-size: 1rem;
 }
 
 #resp {
     background-color: rgb(219, 219, 219);
-    height: 5rem;
     width: 4rem;
     font-size: 2rem;
     text-align: center;
@@ -68,7 +71,6 @@ span {
 button {
     color: #fff;
     background-color: rgba(138, 14, 255, 0.74);
-    height: 5rem;
     width: 6rem;
     font-size: 1.5rem;
     border-radius: 0 1rem 1rem 0;
@@ -86,10 +88,41 @@ button:hover {
 
 }
 
-@media (max-width: 600px) {
+@media (min-width: 769px) and (max-width: 1279) {
     .gamer {
-        transform: rotate(90deg);
         height: 40vh;
-        width: 50rem;
+        width: 70vw;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .gamer {
+        height: 40vh;
+        width: 70vw;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .gamer {
+        height: 40vh;
+        width: 70vw;
+    }
+
+    h2 {
+        font-size: 2rem;
+        width: 23rem;
+    }
+
+    span {
+        font-size: 1rem;
     }
 }

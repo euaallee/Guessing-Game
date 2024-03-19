@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Adivinhação</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/scrip.js" defer></script>
 </head>
 <body>
-    <main>
-        <div class="gamer">
-            <h2>Jogo da Adivinhação</h2>
+    <div class="main">
+        <div class="screen">
+            <h1>Jogo da Adivinhação</h1>
             <span>Adivinhe o número entre 0 e 10</span>
-            <div id="campoResp" class="respostas">
-                <input id="resp" type="text">
-                <button type="submit" class="tentar" id="tentar" onclick="tentar()">Tentar</button>
-            </div>
         </div>
-    </main>
+        <div class="input">
+            <input type="number" name="tentar" id="tentar">
+            <button onclick="Tentar()" type="button">Tentar</button>
+        </div>
+    </div>
 </body>
 </html>
